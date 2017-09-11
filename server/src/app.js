@@ -14,6 +14,7 @@ app.use(cors())
 
 require('./routes')(app)
 
+// To clean the DB run sequelize.syn({force: true}) -- ATENÇÃO em Produtivo
 sequelize.sync()
   .then(() => {
     app.listen(config.port)
