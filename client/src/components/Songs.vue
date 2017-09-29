@@ -33,7 +33,7 @@
                     songId: song.id
                   }
                 })" >
-                Song
+                View
               </v-btn>
             </v-flex>
 
@@ -41,7 +41,6 @@
               <img :src="song.albumImageUrl" class="album-image">
             </v-flex>
           </v-layout>
-          {{song.title}} - {{song.artist}} - {{song.album}}
         </div>
 
       </panel>
